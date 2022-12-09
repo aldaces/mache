@@ -1,0 +1,29 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+.headline
+  background-color: black
+  display: flex
+  justify-content: space-around
+  height: 80px
+  .menu-block ul, .icons-block ul
+    text-align: center
+    vertical-align: middle
+    padding: 0
+    margin: 0
+  .menu-list
+    display: flex
+    list-style: none
+    line-height: 80px
+  a
+    color: white
+    padding: 10px
+    text-decoration: none
+
+  .icons-list
+    display: flex
+    list-style: none
+    line-height: 80px
