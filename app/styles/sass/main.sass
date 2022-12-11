@@ -5,25 +5,96 @@
 @import 'blocks/**/*'
 
 .headline
-  background-color: black
-  display: flex
-  justify-content: space-around
-  height: 80px
-  .menu-block ul, .icons-block ul
-    text-align: center
-    vertical-align: middle
-    padding: 0
-    margin: 0
-  .menu-list
-    display: flex
-    list-style: none
-    line-height: 80px
-  a
-    color: white
-    padding: 10px
-    text-decoration: none
+	background-color: black
+	display: flex
+	justify-content: space-around
+	height: 80px
+	.menu-block ul, .icons-block ul
+		text-align: center
+		vertical-align: middle
+		padding: 0
+		margin: 0
+	.menu-list,.icons-list
+		display: flex
+		list-style: none
+	.menu-list
+		line-height: 80px
+		&-item
+			margin: 0 25px
+		a
+			color: white
+			font-weight: 600
+			font-size: 20px
+			text-decoration: none
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				bottom: -5px
+				width: 0
+				height: 2px
+				background-color: white
+				transition: width 0.5s
+			&:hover:before
+				width: 100%
+	.icons-list
+		display: flex
+		align-items: center
+		height: 100%
+		&-item
+			margin: 12px
+			a
+				color: white
+				display: block
+			i
+				font-size: 28px
+				&:hover
+					font-size: 30px
+					transition: ease 0.3s
 
-  .icons-list
-    display: flex
-    list-style: none
-    line-height: 80px
+.header
+	display: flex
+	justify-content: space-around
+	align-items: center
+	margin-top: 30px
+	&-lang
+		display: flex
+		&-item
+			margin-left: 10px
+			position: relative
+			&:nth-child(n+2)::after
+				content: ''
+				width: 1px
+				height: 80%
+				position: absolute
+				left: -5px
+				bottom: 0
+				top: 4px
+				background-color: $accent
+		a
+			color: $accent
+			text-decoration: none
+			font-size: 14px
+			font-weight: 400
+			&:hover
+				text-decoration: underline
+				font-weight: 500
+	&-search
+		position: relative
+		&::before
+			content: '\f007'
+			font-family: "Font Awesome 6 Free"
+			display: inline-block
+			font-weight: 500
+			font-size: 20px
+			position: absolute
+			bottom: 10px
+			left: 0
+			z-index: 10
+		input
+			border: 1px solid #252525
+			border-radius: 6px
+			width: 298px
+			height: 48px
+			position: relative

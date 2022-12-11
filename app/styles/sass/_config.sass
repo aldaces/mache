@@ -1,11 +1,10 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
+$accent: #252525 // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
-$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$bg-gold: #D4B0731A // Text Color
+$line-height: 1.65 // Document Line Height
+$user-font: 'Montserrat', sans-serif // User Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px
@@ -20,17 +19,9 @@ $gutter: $grid-gutter-width
 
 // FONTS LOAD SECTION
 
-@mixin font($fname, $fstyle, $fweight, $furl)
-	@font-face
-		font-family: $fname
-		font-style: $fstyle
-		font-weight: $fweight
-		src: url($furl) format('woff2')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap')
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
 
 // GENERAL CSS SETTINGS
 
@@ -49,10 +40,10 @@ input, textarea
 		border-color: green
 
 body
-	font-family: $userfont
+	font-family: $user-font
 	font-size: $fontsize
-	line-height: $lineheight
-	color: $textcolor
+	line-height: $line-height
+	color: $accent
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
