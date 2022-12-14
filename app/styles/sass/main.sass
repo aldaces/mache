@@ -107,3 +107,66 @@
 			&:focus
 				border: 2px solid #252525
 
+//index.html main content
+.banner
+	position: relative
+	&-desc
+		position: absolute
+		top: 170px
+		right: 80px
+		&-title
+			font-size: 40px
+			font-weight: 600
+			width: 490px
+			line-height: 150%
+		&-button
+			width: 305px
+			height: 60px
+			background: rgba(255, 255, 255, 0.27)
+			border: solid 1px $accent
+			border-radius: 6px
+			margin: 60px auto
+			a
+				display: block
+				height: 100%
+				width: 100%
+				text-align: center
+				color: $accent
+				line-height: 60px
+				text-decoration: none
+				font-size: 28px
+				font-weight: 500
+				&:hover
+					color: $accent
+			&:hover
+				background-color: white
+				transition: ease 0.5s
+.day
+	text-align: center
+	font-weight: 500
+	margin: 55px auto
+	&-title
+		font-size: 28px
+		margin: 32px auto
+	&-price
+		font-size: 32px
+	&-button
+		width: 290px
+		height: 60px
+		border-radius: 6px
+		background: $accent
+		margin: 32px auto
+		a
+			display: block
+			height: 100%
+			width: 100%
+			text-align: center
+			line-height: 60px
+			color: white
+			font-size: 28px
+			text-decoration: none
+			&:hover
+				color: white
+		&:hover
+			background-color: rgb(37, 37, 37, 0.8)
+			transition: ease 0.5s
