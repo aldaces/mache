@@ -170,3 +170,50 @@
 		&:hover
 			background-color: rgb(37, 37, 37, 0.8)
 			transition: ease 0.5s
+.trending
+	margin: 0 auto
+	max-width: 100%
+	&-title
+		font-size: 28px
+		font-weight: 500
+		text-align: center
+	.slick-next:before,.slick-prev:before
+		position: absolute
+		top: -200%
+		z-index: 20
+		color: $accent
+	&-slider
+		&-item
+			margin: 20px
+			&-name
+				font-size: 18px
+				font-weight: 500
+				height: 50px
+				line-height: 130%
+				margin: 10px 0
+				a
+					color: $accent
+					text-decoration: none
+					&:hover
+						color: $accent
+						text-decoration: underline
+			&-rev
+				color: #D4B073
+				display: flex
+				margin-bottom: 10px
+				.stars
+					margin-right: 10px
+				.rev-count a
+					color: $accent
+			&-price
+				display: flex
+				.price-act, .price-disc
+					font-size: 20px
+					font-weight: 600
+					span
+						display: block
+				.price-through
+					text-decoration: line-through
+					margin-right: 10px
+				.price-disc
+					color: #8E0707
