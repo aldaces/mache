@@ -210,10 +210,116 @@
 				.price-act, .price-disc
 					font-size: 20px
 					font-weight: 600
+					margin-right: 10px
 					span
 						display: block
+				.new-label
+					align-self: center
 				.price-through
 					text-decoration: line-through
-					margin-right: 10px
 				.price-disc
 					color: #8E0707
+.second
+	background-color: $accent
+	width: 300px
+	a
+		color: white
+		font-size: 22px
+
+.subscribe
+	display: flex
+	justify-content: space-around
+	align-items: center
+	margin: 70px auto
+	&-title
+		font-size: 25px
+		font-weight: 500
+		width: 378px
+		height: 76px
+	&-form
+		&-input
+			width: 400px
+			height: 60px
+			border: 1px solid $accent
+			border-radius: 6px
+			margin-right: 20px
+			padding-left: 10px
+		input::placeholder
+			font-size: 25px
+			font-weight: 500
+			color: #BCBFC7
+		input:focus
+			border-width: 2px
+		&-button
+			width: 320px
+			height: 60px
+			border-radius: 6px
+			background: $accent
+			color: white
+			font-size: 21px
+			padding: 0
+			border: 1px solid $accent
+			margin: 0
+.benefits
+	display: flex
+	justify-content: space-around
+	background: rgba(212, 176, 115, 0.1)
+	padding: 50px 0
+	&-item
+		text-align: center
+		&-img
+			height: 75px
+			display: flex
+			align-items: center
+			justify-content: center
+		&-title
+			font-weight: 500
+			font-size: 25px
+			margin-bottom: 10px
+		&-link a
+			font-size: 20px
+			color: $accent
+.instagram
+	text-align: center
+	margin: 50px auto
+	&-title
+		font-size: 25px
+		font-weight: 500
+	&-img
+		display: flex
+		justify-content: center
+
+//footer
+
+.footer
+	display: flex
+	justify-content: space-around
+	background-color: $accent
+	padding: 40px 0
+	&-links
+		&-title
+			font-size: 20px
+			font-weight: 600
+			text-transform: uppercase
+			color: white
+		&-item
+			margin: 3px
+			a
+				font-size: 18px
+				color: white
+				text-decoration: none
+		&-social
+			font-size: 20px
+			font-weight: 500
+			color: white
+			&-block
+				display: flex
+				justify-content: space-between
+			&-img
+				font-size: 40px
+				a
+					color: white
+					&:hover
+						color: white
+						font-size: 42px
+						transition: ease 0.5s
